@@ -1,0 +1,37 @@
+{
+  "name": "muon",
+  "version": "0.1.0",
+  "main": "muon.js",
+  "description": "A teensy-weensy declarative custom elements library with support for Ractive.js.",
+  "license": "MIT",
+  "author": "Joshua Bemenderfer",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tribex/iceblerg.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Tribex/iceblerg/issues"
+  },
+  "homepage": "https://github.com/Tribex/iceblerg#readme",
+  "keywords": [
+    "webcomponents",
+    "web-components",
+    "custom-elements",
+    "declarative",
+    "ractive.js",
+    "ractive",
+    "electron",
+    "nw.js"
+  ],
+  "devDependencies": {
+    "babel": "^5.8.23",
+    "eslint": "^1.3.1",
+    "gulp": "^3.9.0",
+    "gulp-babel": "^5.2.1",
+    "gulp-livereload": "^3.8.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-replace": "^0.5.4",
+    "gulp-uglify": "^1.4.0",
+    "gulp-umd": "^0.2.0"
+  }
+}
