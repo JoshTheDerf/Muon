@@ -1,4 +1,4 @@
-![Muon Header Image](resources/muon-full.svg)
+![Muon Header Image](resources/muon-full.png)
 #### Muon
 *A teensy-weensy declarative custom elements library with support for Ractive.js.*
 

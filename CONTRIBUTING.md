@@ -11,9 +11,9 @@ Be courteous. Don't fight. Treat everyone else like they're a real person standi
 Fork Muon [on GitHub](https://github.com/Tribex/Muon/) and begin editing it locally.
 
 ```
-$ git clone git@github.com:USERNAME/Muon.git
+$ git clone https://github.com/USERNAME/Muon.git
 $ cd Muon
-$ git remote add upstream git://github.com/Tribex/Muon.git
+$ git remote add upstream https://github.com/Tribex/Muon.git
 ```
 
 ##### Step 2: Create a new branch for your feature or bug fix.
