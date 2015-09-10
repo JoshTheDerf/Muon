@@ -2,6 +2,8 @@
 #### Muon
 *A teensy-weensy declarative custom elements library with support for Ractive.js.*
 
+A set of UI elements created with Muon can be found in the [Muon Elements](https://github.com/Tribex/Muon-Elements) repository.
+
 #### Features
  * Quick-and-simple declarative syntax for declaring custom elements.
  * Support for easy data-driven templating with [Ractive.js](http://ractivejs.org)
@@ -83,10 +85,10 @@ Writing an element that uses Ractive.js is quite straightforward:
   </template>
 </muon-element>
 
-<!-- Using it is as smiple as this: -->
+<!-- Using it is as simple as this: -->
 <my-ractive-element id="greetingElement"></my-ractive-element>
 ```
-At this point, your element will only render a comma. To remedy this, grab an instance of your element (perhaps with `document.getElementById()`), and call it's `setRactiveData()` method.
+At this point, your element will only render ',!'. To remedy this, grab an instance of your element (perhaps with `document.getElementById()`), and call it's `setRactiveData()` method.
 
 ```javascript
 document.getElementById('greetingElement').setRactiveData({
