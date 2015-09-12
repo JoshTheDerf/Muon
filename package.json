@@ -1,5 +1,5 @@
 {
-  "name": "muon",
+  "name": "muon-base",
   "version": "0.1.0",
   "main": "muon.js",
   "description": "A teensy-weensy declarative custom elements library with support for Ractive.js.",
@@ -7,12 +7,12 @@
   "author": "Joshua Bemenderfer",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Tribex/iceblerg.git"
+    "url": "git+https://github.com/Tribex/Muon.git"
   },
   "bugs": {
-    "url": "https://github.com/Tribex/iceblerg/issues"
+    "url": "https://github.com/Tribex/Muon/issues"
   },
-  "homepage": "https://github.com/Tribex/iceblerg#readme",
+  "homepage": "https://github.com/Tribex/Muon#readme",
   "keywords": [
     "webcomponents",
     "web-components",

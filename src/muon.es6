@@ -33,6 +33,11 @@ let partiallyRegisteredElements = {}
 // An object holding name->element prototype mappings on initialized elements.
 let elements = {}
 
+// Polyfill function to support both old 'createShadowRoot' and new 'attachShadow()' methods.
+let attachShadow = function(element) {
+  return element.attachShadow ? element.attachShadow() : element.createShadowRoot()
+}
+
 /**
  * Initializes a Muon Element.
  * @param {string} tagName The tag name of the element which is being initialized.
@@ -65,8 +70,9 @@ let Muon = function (tagName, properties) {
       // If this.onPreCreate() returns true, skip the default creation logic.
       if(this.onPreCreate) skipCreate = this.onPreCreate()
 
-      if(!skipCreate) {
-        let rootElement = this.isShadow ? this.createShadowRoot() : this
+      // Populate the element's content based on the template provided, if it exists.
+      if(!skipCreate && this.muonTemplate && this.muonTemplate.content) {
+        let rootElement = this.isShadow ? attachShadow(this) : this
 
         if(this.isRactive && _Ractive) {
           // Use defined ractiveOptions object, if it exists.
